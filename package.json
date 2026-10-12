@@ -1,0 +1,29 @@
+{
+  "name": "agriprocure-backend-api",
+  "version": "1.0.0",
+  "description": "Render Node.js Express REST API for Smart Farmer Procurement System using Neon Cloud PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "neon",
+    "render",
+    "dbt-payments",
+    "farmer-procurement"
+  ],
+  "author": "AgriProcure Engineering",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -30,7 +30,8 @@ router.get('/', async (req, res) => {
 });
 
 // Auto-initialize DB Schema + Seed Data
-router.post('/init-db', async (req, res) => {
+// Also support GET so it can be triggered directly from a browser
+router.get('/init-db', async (req, res) => {
     if (!db.pool) {
         return res.status(503).json({ success: false, message: 'Database not configured' });
     }
